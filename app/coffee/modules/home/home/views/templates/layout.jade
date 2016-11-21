@@ -1,0 +1,15 @@
+mixin menuItem(opts)
+  a.list-group-item( href=opts.href style='touch-action:none;' )
+    i.fa.fa-fw.m-r-1( class=opts.icon )
+    = opts.label
+
+.row
+  .col-xs-12
+    h2 Tack
+    p.lead Contacts made easy.
+
+.row.m-t-1
+  .col-xs-12
+    ul.list-group
+      for each in items
+        +menuItem(each)

@@ -1,0 +1,19 @@
+.row
+  .col-xs-12
+    h4= label
+
+  .col-xs-12
+    .btn-group.w-100
+      a.btn.btn-success-outline.w-50( href='#contact_methods/' + _id + '/edit' )
+        i.fa.fa-fw.fa-pencil
+
+      a.btn.btn-danger-outline.w-50( data-click='destroy' )
+        i.fa.fa-fw.fa-trash
+
+.row.m-t-1
+  .col-xs-12
+    .card.card-block
+      .text-xs-left
+        i.fa.fa-fw.p-r-1(class=icon)
+        = label
+      small.text-xs-right.text-muted= value
